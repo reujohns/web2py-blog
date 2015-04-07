@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+
+{%block content %}
+<form method="post">
+	<div>
+		<label>Blog Title
+			<br>
+	    	<input type="text" name="blgtitle" value={{blgtitle}}>
+		</label>
+	</div>	
+	<div>
+		<label>Write content
+			<br>
+		<textarea name="blgcontent">{{blgcontent}}</textarea>
+		</label>
+	</div>	
+	<div>
+		<input type="submit">
+	</div>	
+	
+</form>
+<hr>
+<div>
+	{% for blog in blog %}
+	<br>
+	<div style="background-color: #ddd;">
+	{{ error }}
+	</div>
+	<br>
+	<div style="background-color: #ddd;" >
+	{{blog.title}}
+	</div>
+	<br>
+	<div style="background-color: #ddd;">
+	{{blog.content}}
+	</div>
+	{% endfor%}
+</div>	
+
+{% endblock %}
