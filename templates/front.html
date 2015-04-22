@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>NaiDidIt</title>
+		</head>
+		<body style="margin=0">
+
+			<div>
+
+				{% for p in blog %}
+					{{p.render() | safe }}  </a>
+				
+				{% endfor %}
+			</div>	
+		</body>
+	</html>			
+		
