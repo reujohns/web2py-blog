@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head><title>User Registration</title>
+	<link rel="stylesheet" type="text/css" media="all" href="style.css"
+	/>
+	</head>
+	<body>
+		<div class="formhandler">
+		<form method="post">
+			<table>
+				<tr>
+					<td>
+						<label>Name</label>
+					</td>	
+					<td>						
+						<input type="text" name="username" value="{{username}}">
+					</td>
+					<td>
+						{{error_username}}
+					</td>	
+				</tr>
+				<tr>	
+					<td>			
+						<label>Password</label>
+					</td>	
+					<td>
+						<input type="password" name="password" value="">
+					</td>
+					<td>
+						{{error_password}}
+					</td>	
+				</tr>	
+				<tr>
+					<td>			
+						<label>Confirm Password</label>
+					</td>
+					<td>	
+						<input type="password" name="verify" value="">
+					</td>
+					<td>
+						{{error_verify}}
+					</td>	
+				</tr>
+				<tr>
+					<td>			
+						<label>E-Mail</label>
+					</td>
+					<td>	
+						<input type="text" name="email">
+					</td>
+					<td>
+						{{error_mail}}
+					</td>	
+				</tr>
+				<tr colspan=3>
+					<td><input type="submit"></td>
+				</tr>	
+			</table>
+
+		</form>
+	</div>
+	</body>	
+
+</html> 
