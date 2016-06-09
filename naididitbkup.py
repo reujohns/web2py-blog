@@ -66,8 +66,8 @@ class MainPage(Handler):
 			a = Blog(title = title,content = content)
 			a.put()
 
-			self.redirect('/)
-			
+			self.redirect('/')
+
 		else:
 			error = "Got some rendering error"
 			self.render_naididit(content,title,error)

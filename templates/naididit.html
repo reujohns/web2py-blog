@@ -5,13 +5,13 @@
 	<div>
 		<label>Blog Title
 			<br>
-	    	<input type="text" name="blgtitle" value={{blgtitle}}>
+	    	<input type="text" name="subject" value={{subject}}>
 		</label>
 	</div>	
 	<div>
 		<label>Write content
 			<br>
-		<textarea name="blgcontent">{{blgcontent}}</textarea>
+		<textarea name="content">{{content}}</textarea>
 		</label>
 	</div>	
 	<div>
@@ -20,21 +20,5 @@
 	
 </form>
 <hr>
-<div>
-	{% for blog in blog %}
-	<br>
-	<div style="background-color: #ddd;">
-	{{ error }}
-	</div>
-	<br>
-	<div style="background-color: #ddd;" >
-	{{blog.title}}
-	</div>
-	<br>
-	<div style="background-color: #ddd;">
-	{{blog.content}}
-	</div>
-	{% endfor%}
-</div>	
 
 {% endblock %}
